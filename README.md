@@ -1,5 +1,7 @@
 # Cowboy Quick Shot - Website
 
+🌐 **Website**: https://avinashkr29.github.io/cowboy-quick-shot-app/
+
 This is the official website for **Cowboy Quick Shot**, the ultimate Western-themed reflex game for iOS.
 
 ## 🤠 About the Game

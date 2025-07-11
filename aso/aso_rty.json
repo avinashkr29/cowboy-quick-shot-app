@@ -1,0 +1,576 @@
+{
+    "status": "success",
+    "requestID": "90d76025-9565-4166-954d-fa1c4b95d334_1751613773181.52252D0",
+    "data": [
+        {
+            "id": 1,
+            "name": "reaction",
+            "popularity": 18,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 2,
+            "name": "time",
+            "popularity": 46,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 3,
+            "name": "game",
+            "popularity": 65,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 4,
+            "name": "quick",
+            "popularity": 43,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 5,
+            "name": "draw",
+            "popularity": 56,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 6,
+            "name": "cowboy",
+            "popularity": 35,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 7,
+            "name": "reflex",
+            "popularity": 48,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 8,
+            "name": "test",
+            "popularity": 39,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 9,
+            "name": "wild",
+            "popularity": 46,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 10,
+            "name": "west",
+            "popularity": 54,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 11,
+            "name": "gunfighter",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 12,
+            "name": "duel",
+            "popularity": 37,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 13,
+            "name": "timing",
+            "popularity": 16,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 14,
+            "name": "speed",
+            "popularity": 47,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 15,
+            "name": "motion",
+            "popularity": 49,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 16,
+            "name": "phone",
+            "popularity": 62,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 17,
+            "name": "flick",
+            "popularity": 30,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 18,
+            "name": "accelerometer",
+            "popularity": 23,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 19,
+            "name": "western",
+            "popularity": 34,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 20,
+            "name": "gunslinger",
+            "popularity": 16,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 21,
+            "name": "outlaw",
+            "popularity": 23,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 22,
+            "name": "sheriff",
+            "popularity": 22,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 23,
+            "name": "showdown",
+            "popularity": 23,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 24,
+            "name": "challenge",
+            "popularity": 26,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 25,
+            "name": "reflexes",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 26,
+            "name": "fast",
+            "popularity": 42,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 27,
+            "name": "hand-eye",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 28,
+            "name": "coordination",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 29,
+            "name": "millisecond",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 30,
+            "name": "precision",
+            "popularity": 13,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 31,
+            "name": "sensor",
+            "popularity": 18,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 32,
+            "name": "movement",
+            "popularity": 24,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 33,
+            "name": "tilt",
+            "popularity": 39,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 34,
+            "name": "gesture",
+            "popularity": 16,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 35,
+            "name": "interactive",
+            "popularity": 26,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 36,
+            "name": "skill",
+            "popularity": 27,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 37,
+            "name": "arcade",
+            "popularity": 48,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 38,
+            "name": "casual",
+            "popularity": 31,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 39,
+            "name": "training",
+            "popularity": 37,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 40,
+            "name": "benchmark",
+            "popularity": 31,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 41,
+            "name": "fastest",
+            "popularity": 21,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 42,
+            "name": "quickest",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 43,
+            "name": "lightning",
+            "popularity": 44,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 44,
+            "name": "competitive",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 45,
+            "name": "2",
+            "popularity": 44,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 46,
+            "name": "player",
+            "popularity": 43,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 47,
+            "name": "standoff",
+            "popularity": 42,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 48,
+            "name": "pvp",
+            "popularity": 40,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 49,
+            "name": "as",
+            "popularity": 37,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 50,
+            "name": "gun",
+            "popularity": 55,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 51,
+            "name": "multiplayer",
+            "popularity": 44,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 52,
+            "name": "global",
+            "popularity": 36,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 53,
+            "name": "matchmaking",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 54,
+            "name": "head",
+            "popularity": 30,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 55,
+            "name": "to",
+            "popularity": 46,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 56,
+            "name": "face",
+            "popularity": 55,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 57,
+            "name": "off",
+            "popularity": 35,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 58,
+            "name": "friends",
+            "popularity": 51,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 59,
+            "name": "party",
+            "popularity": 39,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 60,
+            "name": "bragging",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 61,
+            "name": "rights",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 62,
+            "name": "leaderboards",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 63,
+            "name": "personal",
+            "popularity": 31,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 64,
+            "name": "best",
+            "popularity": 35,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 65,
+            "name": "practice",
+            "popularity": 20,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 66,
+            "name": "mode",
+            "popularity": 28,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 67,
+            "name": "gunman",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 68,
+            "name": "pistol",
+            "popularity": 18,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 69,
+            "name": "fight",
+            "popularity": 45,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 70,
+            "name": "bounty",
+            "popularity": 32,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 71,
+            "name": "hunt",
+            "popularity": 35,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 72,
+            "name": "midnight",
+            "popularity": 18,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 73,
+            "name": "final",
+            "popularity": 34,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 74,
+            "name": "ready",
+            "popularity": 33,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 75,
+            "name": "steady",
+            "popularity": 29,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 76,
+            "name": "bang",
+            "popularity": 44,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 77,
+            "name": "3d",
+            "popularity": 48,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 78,
+            "name": "shooting",
+            "popularity": 47,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 79,
+            "name": "tap",
+            "popularity": 49,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 80,
+            "name": "controls",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 81,
+            "name": "rapid",
+            "popularity": 40,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 82,
+            "name": "fire",
+            "popularity": 50,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 83,
+            "name": "detection",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 84,
+            "name": "holster",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 85,
+            "name": "lift",
+            "popularity": 51,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 86,
+            "name": "and",
+            "popularity": 27,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 87,
+            "name": "shoot",
+            "popularity": 37,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 88,
+            "name": "wireless",
+            "popularity": 24,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 89,
+            "name": "accuracy",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 90,
+            "name": "gaming",
+            "popularity": 35,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 91,
+            "name": "testing",
+            "popularity": 16,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 92,
+            "name": "drink",
+            "popularity": 33,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 93,
+            "name": "drinking game",
+            "popularity": 5,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 94,
+            "name": "parents",
+            "popularity": 20,
+            "matchType": "BROAD"
+        },
+        {
+            "id": 95,
+            "name": "kids",
+            "popularity": 51,
+            "matchType": "BROAD"
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+keyword,apple_popularity,apple_match_type,google_searches,google_3m_change,google_yoy_change,google_competition,google_bid_low,google_bid_high,in_apple,in_google,platform_notes
+2,44,BROAD,1M – 10M,0%,0%,Low,¥29,¥186,YES,YES,Both platforms - High volume on Google
+3d,48,BROAD,10K – 100K,0%,0%,Low,¥120,¥729,YES,YES,Both platforms
+accelerometer,23,BROAD,100 – 1K,0%,0%,Low,¥155,¥521,YES,YES,Both platforms - Technical term
+accuracy,5,BROAD,10K – 100K,0%,0%,Low,—,—,YES,YES,Both platforms - Higher Google volume
+and,27,BROAD,10K – 100K,0%,0%,Low,¥4,¥99,YES,YES,Both platforms - Common word
+arcade,48,BROAD,10K – 100K,0%,0%,Low,¥21,¥3806,YES,YES,Both platforms - High Apple popularity
+as,37,BROAD,10K – 100K,0%,0%,Low,¥12,¥186,YES,YES,Both platforms - Common word
+bang,44,BROAD,10K – 100K,0%,0%,Low,¥14,¥388,YES,YES,Both platforms - Western themed
+benchmark,31,BROAD,1K – 10K,0%,0%,Low,¥29,¥34,YES,YES,Both platforms
+best,35,BROAD,10K – 100K,0%,0%,Low,¥14,¥329,YES,YES,Both platforms
+bounty,32,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Western themed
+bragging,5,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Social feature
+casual,31,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Game category
+challenge,26,BROAD,10K – 100K,0%,0%,Low,¥126,¥407,YES,YES,Both platforms
+competitive,5,BROAD,10K – 100K,0%,0%,Low,¥6,¥72,YES,YES,Both platforms - Higher Google volume
+controls,5,BROAD,1K – 10K,0%,-90%,Low,—,—,YES,YES,Both platforms - Declining Google trend
+coordination,5,BROAD,10K – 100K,900%,0%,Low,¥64,¥110,YES,YES,Both platforms - Growing on Google
+cowboy,35,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Core theme
+detection,5,BROAD,10K – 100K,0%,0%,Low,—,—,YES,YES,Both platforms - Technical term
+draw,56,BROAD,10K – 100K,0%,0%,Low,¥50,¥71,YES,YES,Both platforms - Core game mechanic
+duel,37,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Core game mechanic
+face,55,BROAD,10K – 100K,0%,0%,Low,¥1,¥513,YES,YES,Both platforms - High Apple popularity
+fast,42,BROAD,100K – 1M,0%,0%,Low,—,—,YES,YES,Both platforms - Very high Google volume
+fight,45,BROAD,1K – 10K,900%,900%,Low,¥41,¥219,YES,YES,Both platforms - High growth on Google
+final,34,BROAD,10K – 100K,0%,0%,Low,¥23,¥240,YES,YES,Both platforms
+fire,50,BROAD,10K – 100K,0%,0%,Low,¥2,¥224,YES,YES,Both platforms - Western themed
+flick,30,BROAD,1K – 10K,0%,0%,Low,¥30,¥59,YES,YES,Both platforms - Game mechanic
+friends,51,BROAD,10K – 100K,0%,0%,Low,¥239,¥594,YES,YES,Both platforms - Social feature
+game,65,BROAD,10K – 100K,0%,0%,Low,¥5,¥145,YES,YES,Both platforms - Highest Apple popularity
+gaming,35,BROAD,10K – 100K,0%,0%,Low,¥5,¥145,YES,YES,Both platforms
+gesture,16,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Game mechanic
+global,36,BROAD,10K – 100K,0%,0%,Low,¥119,¥382,YES,YES,Both platforms - Multiplayer feature
+gun,55,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Western themed
+gunfighter,5,BROAD,10 – 100,0%,0%,Low,—,—,YES,YES,Both platforms - Very low Google volume
+gunman,5,BROAD,—,—,—,—,—,—,YES,YES,Both platforms - No Google data
+gunslinger,16,BROAD,100 – 1K,0%,0%,Low,—,—,YES,YES,Both platforms - Western themed
+hand-eye,5,BROAD,10 – 100,0%,0%,Low,—,—,YES,YES,Both platforms - Very low volume (hand eye in Google)
+head,30,BROAD,10K – 100K,0%,0%,Low,¥6,¥283,YES,YES,Both platforms
+holster,5,BROAD,100 – 1K,0%,0%,Low,—,—,YES,YES,Both platforms - Western themed
+hunt,35,BROAD,10K – 100K,0%,0%,Medium,¥35,¥233,YES,YES,Both platforms - Medium competition on Google
+interactive,26,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms
+leaderboards,5,BROAD,100 – 1K,0%,0%,Low,—,—,YES,YES,Both platforms - Social feature
+lift,51,BROAD,1K – 10K,0%,0%,Low,¥38,¥214,YES,YES,Both platforms
+lightning,44,BROAD,10K – 100K,0%,0%,Low,¥19,¥126,YES,YES,Both platforms - Speed themed
+matchmaking,5,BROAD,100 – 1K,0%,0%,Low,¥139,¥771,YES,YES,Both platforms - Multiplayer feature
+midnight,18,BROAD,10K – 100K,0%,0%,Low,¥7,¥13,YES,YES,Both platforms - Western themed
+millisecond,5,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Precision timing
+mode,28,BROAD,1K – 10K,0%,0%,Low,¥106,¥313,YES,YES,Both platforms - Game feature
+motion,49,BROAD,10K – 100K,0%,900%,Low,¥23,¥382,YES,YES,Both platforms - Core mechanic
+movement,24,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Game mechanic
+multiplayer,44,BROAD,100 – 1K,900%,900%,Low,—,—,YES,YES,Both platforms - High growth on Google
+off,35,BROAD,10K – 100K,0%,0%,Low,¥41,¥51,YES,YES,Both platforms
+outlaw,23,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Western themed
+party,39,BROAD,10K – 100K,0%,0%,Low,¥7,¥400,YES,YES,Both platforms - Social feature
+personal,31,BROAD,1K – 10K,900%,0%,Low,—,—,YES,YES,Both platforms - Growing on Google
+phone,62,BROAD,10K – 100K,0%,0%,Medium,¥67,¥532,YES,YES,Both platforms - High Apple popularity
+pistol,18,BROAD,—,—,—,—,—,—,YES,YES,Both platforms - No Google data
+player,43,BROAD,1K – 10K,0%,900%,Low,—,—,YES,YES,Both platforms - Growing on Google
+practice,20,BROAD,10K – 100K,0%,0%,Low,—,—,YES,YES,Both platforms
+precision,13,BROAD,10K – 100K,0%,0%,Low,¥102,¥815,YES,YES,Both platforms - High Google bids
+pvp,40,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Gaming term
+quick,43,BROAD,1K – 10K,900%,0%,Low,¥169,¥583,YES,YES,Both platforms - Growing on Google
+quickest,5,BROAD,100 – 1K,0%,-90%,Low,—,—,YES,YES,Both platforms - Declining Google trend
+rapid,40,BROAD,10K – 100K,900%,0%,Low,—,—,YES,YES,Both platforms - Growing on Google
+reaction,18,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Core game mechanic
+ready,33,BROAD,10K – 100K,0%,0%,Low,—,—,YES,YES,Both platforms
+reflex,48,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Core game mechanic
+rights,5,BROAD,10K – 100K,0%,0%,Low,¥904,¥2902,YES,YES,Both platforms - Very expensive Google bids
+sensor,18,BROAD,1K – 10K,0%,0%,Low,¥138,¥369,YES,YES,Both platforms - Technical term
+sheriff,22,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Western themed
+shooting,47,BROAD,1K – 10K,0%,-90%,Low,—,—,YES,YES,Both platforms - Declining Google trend
+showdown,23,BROAD,1K – 10K,-90%,0%,Low,¥445,¥1028,YES,YES,Both platforms - Declining + expensive
+skill,27,BROAD,1K – 10K,0%,0%,Low,¥3,¥38,YES,YES,Both platforms
+speed,47,BROAD,10K – 100K,0%,0%,Low,¥9,¥53,YES,YES,Both platforms
+standoff,42,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Western themed
+steady,29,BROAD,10K – 100K,0%,0%,Low,¥36,¥171,YES,YES,Both platforms
+tap,49,BROAD,10K – 100K,0%,0%,Low,¥94,¥535,YES,YES,Both platforms - Game mechanic
+test,39,BROAD,100K – 1M,0%,0%,Low,¥133,¥746,YES,YES,Both platforms - Very high Google volume
+tilt,39,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Game mechanic
+time,46,BROAD,100K – 1M,0%,0%,Low,¥45,¥227,YES,YES,Both platforms - Very high Google volume
+timing,16,BROAD,1K – 10K,0%,0%,Low,—,—,YES,YES,Both platforms - Core game mechanic
+to,46,BROAD,10K – 100K,900%,900%,Low,¥35,¥104,YES,YES,Both platforms - High growth on Google
+training,37,BROAD,1K – 10K,0%,0%,Low,¥43,¥477,YES,YES,Both platforms
+west,54,BROAD,100K – 1M,0%,0%,Low,—,—,YES,YES,Both platforms - Very high Google volume
+western,34,BROAD,1K – 10K,0%,0%,Low,¥52,¥58,YES,YES,Both platforms - Core theme
+wild,46,BROAD,10K – 100K,0%,900%,Low,—,—,YES,YES,Both platforms - Growing on Google
+wireless,24,BROAD,1K – 10K,0%,0%,Low,¥53,¥239,YES,YES,Both platforms - Multiplayer feature
+fastest,21,BROAD,—,—,—,—,—,—,YES,NO,Apple only - Speed themed
+reflexes,5,BROAD,—,—,—,—,—,—,YES,NO,Apple only - Core game mechanic
+competitive,5,BROAD,—,—,—,—,—,—,YES,NO,Apple only - Low popularity
+shoot,37,BROAD,—,—,—,—,—,—,YES,NO,Apple only - Action term
+testing,16,BROAD,—,—,—,—,—,—,YES,NO,Apple only - QA related
+drink,33,BROAD,—,—,—,—,—,—,YES,NO,Apple only - Party game context
+drinking game,5,BROAD,—,—,—,—,—,—,YES,NO,Apple only - Party game context
+parents,20,BROAD,—,—,—,—,—,—,YES,NO,Apple only - Family audience
+kids,51,BROAD,—,—,—,—,—,—,YES,NO,Apple only - Family audience
