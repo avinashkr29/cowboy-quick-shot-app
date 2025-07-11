@@ -117,18 +117,71 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Typing effect for hero title (supernatural reveal)
+    // Back to Top Button (React Bits Inspired)
+    const backToTopBtn = document.getElementById('back-to-top');
+    const notificationContainer = document.getElementById('notification-container');
+    
+    const cowboyMessages = [
+        '🤠 Yeehaw! Back to the top, partner!',
+        '🐎 Saddle up, we\'re ridin\' to the top!',
+        '⭐ This town ain\'t big enough for scrollin\'!',
+        '🌵 Head \'em up, move \'em out!',
+        '🔫 Draw, partner! To the top we go!',
+        '🏜️ Desert winds carry us upward!',
+        '🚂 All aboard the express to the top!',
+        '🎯 Bullseye! Right back to the start!',
+        '🦅 Soarin\' like an eagle, partner!',
+        '⚡ Faster than a tumbleweed!',
+        '🌟 Ridin\' off into the sunset... upward!',
+        '🎪 Welcome back to the wild west show!'
+    ];
+
+    function getRandomMessage() {
+        return cowboyMessages[Math.floor(Math.random() * cowboyMessages.length)];
+    }
+
+    function showNotification(message) {
+        const notification = document.createElement('div');
+        notification.className = 'cowboy-notification';
+        notification.textContent = message;
+        notificationContainer.appendChild(notification);
+        
+        setTimeout(() => {
+            notification.remove();
+        }, 3000);
+    }
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        showNotification(getRandomMessage());
+    }
+
+    // Show/hide back to top button
+    window.addEventListener('scroll', () => {
+        const visible = window.scrollY > 500;
+        backToTopBtn.classList.toggle('visible', visible);
+    });
+
+    // Back to top button click
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', scrollToTop);
+    }
+
+    // Enhanced typing effect for hero title (supernatural reveal)
     const heroTitle = document.querySelector('.hero-main');
     if (heroTitle) {
         const originalText = heroTitle.textContent;
         heroTitle.textContent = '';
+        heroTitle.classList.add('typing');
         
         let i = 0;
         const typeWriter = () => {
             if (i < originalText.length) {
                 heroTitle.textContent += originalText.charAt(i);
                 i++;
-                setTimeout(typeWriter, 100);
+                setTimeout(typeWriter, 80);
+            } else {
+                heroTitle.classList.remove('typing');
             }
         };
         
@@ -198,7 +251,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     animateTrail();
 
-    // Intersection Observer for scroll animations
+    // Enhanced Intersection Observer for scroll animations
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -207,20 +260,90 @@ document.addEventListener('DOMContentLoaded', function() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('revealed');
             }
         });
     }, observerOptions);
 
     // Observe sections for scroll animations
     const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-        section.style.opacity = '0';
-        section.style.transform = 'translateY(50px)';
-        section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+    sections.forEach((section, index) => {
+        // Add different animation delays for staggered effect
+        const delay = index * 0.1;
+        section.style.transitionDelay = `${delay}s`;
+        section.classList.add('scroll-reveal');
         observer.observe(section);
     });
+
+    // Observe feature cards for individual animations
+    const featureCards = document.querySelectorAll('.feature-card');
+    featureCards.forEach((card, index) => {
+        const delay = index * 0.1;
+        card.style.transitionDelay = `${delay}s`;
+        card.classList.add('scroll-reveal');
+        observer.observe(card);
+    });
+
+    // Observe performance cards for individual animations
+    const performanceCards = document.querySelectorAll('.performance-card');
+    performanceCards.forEach((card, index) => {
+        const delay = index * 0.1;
+        card.style.transitionDelay = `${delay}s`;
+        card.classList.add('scroll-reveal');
+        observer.observe(card);
+    });
+
+    // Enhanced button interactions
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(button => {
+        button.addEventListener('mouseenter', function() {
+            this.style.textShadow = '0 0 15px rgba(230, 188, 8, 0.8)';
+        });
+        
+        button.addEventListener('mouseleave', function() {
+            this.style.textShadow = '';
+        });
+        
+        button.addEventListener('click', function(e) {
+            // Create ripple effect
+            const ripple = document.createElement('span');
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = e.clientX - rect.left - size / 2;
+            const y = e.clientY - rect.top - size / 2;
+            
+            ripple.style.cssText = `
+                width: ${size}px;
+                height: ${size}px;
+                left: ${x}px;
+                top: ${y}px;
+                position: absolute;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.3);
+                transform: scale(0);
+                animation: ripple 0.6s ease-out;
+                pointer-events: none;
+            `;
+            
+            this.appendChild(ripple);
+            
+            setTimeout(() => {
+                ripple.remove();
+            }, 600);
+        });
+    });
+
+    // Add ripple animation
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes ripple {
+            to {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+    `;
+    document.head.appendChild(style);
 });
 
 // Disable right-click context menu for supernatural effect

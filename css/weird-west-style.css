@@ -647,6 +647,275 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
+/* Back to Top Button (React Bits Inspired) */
+.back-to-top-btn {
+    position: fixed;
+    right: 2rem;
+    bottom: 1rem;
+    z-index: 9998;
+    padding: 12px;
+    background: linear-gradient(135deg, #8B4513 0%, #CD853F 100%);
+    color: #F5DEB3;
+    border: 2px solid #e6bc08;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 20px rgba(230, 188, 8, 0.2);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(10px);
+    backdrop-filter: blur(10px);
+    font-family: 'Bungee', cursive;
+}
+
+.back-to-top-btn.visible {
+    opacity: 1;
+    bottom: 2rem;
+    transform: translateY(0);
+}
+
+.back-to-top-btn:hover {
+    background: linear-gradient(135deg, #CD853F 0%, #8B4513 100%);
+    transform: translateY(-5px) rotate(5deg) scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 30px rgba(230, 188, 8, 0.4);
+    border-color: #F5DEB3;
+}
+
+.back-to-top-btn:active {
+    transform: translateY(-2px) rotate(2deg) scale(1.05);
+}
+
+.arrow-up {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.back-to-top-btn:hover .arrow-up {
+    transform: translateY(-2px);
+}
+
+/* Notification System */
+.notification-container {
+    position: fixed;
+    top: 100px;
+    right: 2rem;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.cowboy-notification {
+    background: linear-gradient(135deg, #8B4513 0%, #CD853F 100%);
+    color: #F5DEB3;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 2px solid #e6bc08;
+    font-family: 'Bungee', cursive;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 20px rgba(230, 188, 8, 0.2);
+    backdrop-filter: blur(10px);
+    animation: slideInNotification 0.5s ease-out, fadeOutNotification 0.5s ease-out 2.5s;
+    transform: translateX(100%);
+    opacity: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    letter-spacing: 0.5px;
+}
+
+@keyframes slideInNotification {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutNotification {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Enhanced Hero Text Animation */
+.hero-main {
+    display: block;
+    font-family: 'Creepster', cursive;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #e3dbcc;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    line-height: 1.1;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.hero-main.typing {
+    border-right: 3px solid #e6bc08;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { border-color: #e6bc08; }
+    51%, 100% { border-color: transparent; }
+}
+
+/* Enhanced Feature Cards with Parallax */
+.feature-card {
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+    padding: 40px 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid #333;
+    position: relative;
+    overflow: hidden;
+    transform: rotate(-1deg);
+    backdrop-filter: blur(5px);
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 48%, rgba(230, 188, 8, 0.1) 50%, transparent 52%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.feature-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, transparent 70%, rgba(230, 188, 8, 0.1) 100%);
+    opacity: 0;
+    transition: all 0.5s ease;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.feature-card:hover::before {
+    opacity: 1;
+}
+
+.feature-card:hover::after {
+    opacity: 1;
+    animation-duration: 2s;
+}
+
+.feature-card:hover {
+    transform: rotate(1deg) translateY(-15px);
+    border-color: #e6bc08;
+    box-shadow: 0 20px 50px rgba(230, 188, 8, 0.3);
+}
+
+/* Enhanced Button Animations */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Bungee', cursive;
+    backdrop-filter: blur(5px);
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%);
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.btn:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Enhanced Scroll Animations */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s ease;
+}
+
+.scroll-reveal-left.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease;
+}
+
+.scroll-reveal-right.revealed {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-content {
@@ -726,5 +995,30 @@ body {
     .feature-card:hover,
     .performance-card:hover {
         transform: translateY(-5px);
+    }
+    
+    .back-to-top-btn {
+        right: 1rem;
+        bottom: 1rem;
+        padding: 10px;
+    }
+    
+    .back-to-top-btn.visible {
+        bottom: 1.5rem;
+    }
+    
+    .arrow-up {
+        width: 18px;
+        height: 18px;
+    }
+    
+    .notification-container {
+        right: 1rem;
+        top: 80px;
+    }
+    
+    .cowboy-notification {
+        font-size: 0.8rem;
+        padding: 10px 16px;
     }
 }
