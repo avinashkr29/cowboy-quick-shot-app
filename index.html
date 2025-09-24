@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cowboy Quick Shot - Fast-Draw Reaction Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .game-container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #764ba2;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        
+        .game-area {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 60px 20px;
+            margin: 30px 0;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        
+        .instructions {
+            font-size: 1.1em;
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin: 10px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        
+        .message {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 20px 0;
+            min-height: 50px;
+        }
+        
+        .wait-message {
+            color: #ff6b6b;
+        }
+        
+        .ready-message {
+            color: #51cf66;
+            animation: pulse 0.5s infinite alternate;
+        }
+        
+        @keyframes pulse {
+            from { transform: scale(1); }
+            to { transform: scale(1.05); }
+        }
+        
+        .score {
+            font-size: 1.5em;
+            color: #667eea;
+            margin: 20px 0;
+        }
+        
+        .high-score {
+            color: #764ba2;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e0;
+        }
+        
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        
+        .footer a:hover {
+            color: #764ba2;
+        }
+        
+        .cowboy-emoji {
+            font-size: 4em;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Cowboy Quick Shot</h1>
+        <p class="subtitle">Test your reflexes in the Wild West!</p>
+        
+        <div class="game-area">
+            <div class="cowboy-emoji">🤠</div>
+            <div class="instructions">
+                Click "Start Game" and wait for the signal.<br>
+                When you see "DRAW!", click as fast as you can!
+            </div>
+            <div class="message" id="message"></div>
+            <button class="btn" id="startBtn" onclick="startGame()">Start Game</button>
+            <button class="btn" id="shootBtn" onclick="shoot()" style="display: none;" disabled>SHOOT!</button>
+        </div>
+        
+        <div class="score" id="score"></div>
+        <div class="high-score" id="highScore">High Score: --</div>
+        
+        <div class="footer">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="https://github.com/avinashkr29/cowboy-quick-shot-app">GitHub</a>
+        </div>
+    </div>
+    
+    <script>
+        let startTime;
+        let gameActive = false;
+        let timeout;
+        
+        function loadHighScore() {
+            const highScore = localStorage.getItem('cowboyHighScore');
+            if (highScore) {
+                document.getElementById('highScore').textContent = `High Score: ${highScore} ms`;
+            }
+        }
+        
+        function saveHighScore(time) {
+            const currentHigh = localStorage.getItem('cowboyHighScore');
+            if (!currentHigh || time < parseInt(currentHigh)) {
+                localStorage.setItem('cowboyHighScore', time);
+                document.getElementById('highScore').textContent = `High Score: ${time} ms`;
+                return true;
+            }
+            return false;
+        }
+        
+        function startGame() {
+            gameActive = false;
+            document.getElementById('startBtn').style.display = 'none';
+            document.getElementById('shootBtn').style.display = 'inline-block';
+            document.getElementById('shootBtn').disabled = true;
+            document.getElementById('message').className = 'message wait-message';
+            document.getElementById('message').textContent = 'Wait for it...';
+            document.getElementById('score').textContent = '';
+            
+            const randomDelay = Math.random() * 3000 + 2000;
+            
+            timeout = setTimeout(() => {
+                gameActive = true;
+                startTime = Date.now();
+                document.getElementById('shootBtn').disabled = false;
+                document.getElementById('message').className = 'message ready-message';
+                document.getElementById('message').textContent = 'DRAW!';
+            }, randomDelay);
+        }
+        
+        function shoot() {
+            if (!gameActive) {
+                clearTimeout(timeout);
+                document.getElementById('message').className = 'message wait-message';
+                document.getElementById('message').textContent = 'Too early! You lose!';
+                document.getElementById('score').textContent = 'Try again!';
+                resetGame();
+                return;
+            }
+            
+            const endTime = Date.now();
+            const reactionTime = endTime - startTime;
+            
+            document.getElementById('message').className = 'message';
+            document.getElementById('message').textContent = 'Nice shot!';
+            document.getElementById('score').textContent = `Reaction time: ${reactionTime} ms`;
+            
+            if (saveHighScore(reactionTime)) {
+                document.getElementById('message').textContent = 'NEW HIGH SCORE!';
+            }
+            
+            gameActive = false;
+            resetGame();
+        }
+        
+        function resetGame() {
+            setTimeout(() => {
+                document.getElementById('startBtn').style.display = 'inline-block';
+                document.getElementById('shootBtn').style.display = 'none';
+                document.getElementById('message').textContent = '';
+            }, 2000);
+        }
+        
+        loadHighScore();
+    </script>
+</body>
+</html>
